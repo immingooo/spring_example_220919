@@ -19,4 +19,10 @@ public interface ReviewDAO {
 			@Param("userName") String userName,
 			@Param("point") Double point, 
 			@Param("review") String review);
+	
+	public int updateReviewById( // 키값이 XML로 넘어감
+			@Param("id") int id, 
+			@Param("review") String review);
+	
+	public void deleteReviewById(int id);
 }
